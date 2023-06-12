@@ -26,6 +26,11 @@ public class CrudSpringApplication {
 			c.setCategory("front-end");
 			courseRepository.save(c);
 
+			Course c1 = new Course();
+			c1.setName("Java");
+			c1.setCategory("back-end");
+			courseRepository.save(c1);
+
 		};
 	}
 }
